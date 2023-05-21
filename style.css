@@ -1,0 +1,76 @@
+/* firstly we remove default margin so we give margin:0
+    to bring everything in center horizontally we write display:flex
+    now flex direction is given colum to get everything together
+    now we give alignment center
+    to manage the height of the body with screen we use height:100vh (vh: viewport height)
+    now we use justify-content on center to bring everything on center of screen
+    background is use to add background picture
+    */
+body{ 
+    margin: 0;
+    font-family: sans-serif;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGxhbmRzY2FwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"); 
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+    
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-style: bold;
+    text-align: center;
+    background-color: goldenrod;
+    
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+    
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: .8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    
+}
+
+.clock .text{
+    height: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: 0.8;   
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height : 30px;
+    font-size: 15;
+    background: goldenrod;
+    
+}
+
+
